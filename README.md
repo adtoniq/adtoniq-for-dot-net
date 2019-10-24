@@ -44,6 +44,3 @@ The above code will look for secure updates coming from Adtoniq.
 The Adtoniq.cs file implements the server-to-server communications required with Adtoniq.
 
 That's it! Contact support@adtoniq.com with any questions.
-The Adtoniq.cs file implements the server-to-server communications required with Adtoniq.
-
-That's it! Contact support@adtoniq.com with any questions.
