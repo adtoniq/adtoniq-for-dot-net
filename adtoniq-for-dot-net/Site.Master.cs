@@ -11,7 +11,16 @@ namespace AdtoniqForDotNet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!this.IsPostBack)
+            {
+                string nonce = Request.Params.Get("adtoniqNonce");
+                string apikey = Request.Params.Get("adtoniqAPIKey");
 
+                if (! string.IsNullOrEmpty(nonce) && ! string.IsNullOrEmpty(apikey) && apikey.Equals(AdtoniqLauncher.apiKey))
+                {
+                    AdtoniqLauncher.adtoniq.getLatestJavaScript(nonce);
+                }
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ namespace AdtoniqForDotNet
 {
     public class AdtoniqLauncher
     {
-        private static string apiKey = "put-your-api-key-here";
+        public static readonly string apiKey = "put-your-api-key-here";
 
         public static Adtoniq adtoniq = new Adtoniq(apiKey);
     }

@@ -24,7 +24,7 @@ namespace AdtoniqForDotNet
             getLatestJavaScript();
         }
 
-        private void getLatestJavaScript(String nonce = "")
+        public void getLatestJavaScript(String nonce = "")
         {
             WebRequest request = WebRequest.Create("https://integration.adtoniq.com/api/v1/?operation=update&apiKey=" + apiKey + "&version=" + version + "&nonce=" + nonce);
             request.Method = "POST";
