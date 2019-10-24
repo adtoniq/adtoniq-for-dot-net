@@ -38,6 +38,7 @@ namespace AdtoniqForDotNet
             if (ret.Length > 0)
             {
                 javaScript = ret;
+                // If you must take some action to update your page caches, implement the updatePageCache() function and put that logic there.
                 // updatePageCache();
             }
         }
