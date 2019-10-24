@@ -25,7 +25,7 @@ To activate Adtoniq on all pages of your site, modify the Site.Master file by ad
 
 This will inject the scripts and styles necessary for Adtoniq to function.
 
-Modify the SiteMaster.cs file to add the following code snippet:
+Modify the SiteMaster.cs file to add the following code snippet inside your Page_Load() function:
 ```
 if (!this.IsPostBack)
 {
